@@ -16,6 +16,28 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugins
 
+" Git wrapper so awesome, it should be illegal
+Plugin 'tpope/vim-fugitive'
+
+" quoting/parenthesizing made simple
+Plugin 'tpope/vim-surround'
+
+" Syntax checking hacks for vim
+Plugin 'scrooloose/syntastic'
+
+" Fuzzy file, buffer, mru, tag, etc finder
+Plugin 'kien/ctrlp.vim'
+
+" RoR power tools
+Plugin 'tpope/vim-rails'
+
+" Vim/Ruby Configuration Files
+Plugin 'vim-ruby/vim-ruby'
+
+
+" Themes
+Plugin 'tomasr/molokai'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -30,3 +52,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Syntax highlight
+syntax on
+let g:molokai_original = 1
